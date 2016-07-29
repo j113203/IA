@@ -42,7 +42,6 @@
 
 
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet"> 
 <link rel="stylesheet" href="css/normalize.min.css" rel='stylesheet' type='text/css'/>
 
 <style>
@@ -118,13 +117,20 @@ div#tmodel>div>div>div#B1P>div>div,
 div#tmodel>div>div>div#B5L>div>div>div,
 div#tmodel>div>div>div#L4B>div>div,
 div#tmodel>div>div>div#LBB>div>div>div {
-    display: inline-block
+    display: inline-block;
+}
+div#tmodel>div>div>div#B1P>div>div,
+div#tmodel>div>div>div#L4B>div>div{
+	position: relative;
 }
 div#tmodel>div>div>div#B1P>div>div:after {
     bottom: -1.5em;
+    left:50%;
+    width:10px;
     position: absolute;
-    margin-left: -30px;
-    font-family: 'Droid Sans Mono', monospace
+    margin-left: -5px;
+    font-family: Gill Sans, sans-serif;
+    font-size: 16px;
 }
 div#tmodel>div>div>div#B1P>div>div:nth-child(1):after,
 div#tmodel>div>div>div#B1P>div>div:nth-child(16):after,
@@ -252,10 +258,13 @@ div#tmodel>div>div>div#L4B:after {
     transform: translateY(-50%)
 }
 div#tmodel>div>div>div#L4B>div>div:after {
-    top: -1.8em;
+	width:10px;
+    top: -1.5em;
+    left:50%;
     position: absolute;
-    margin-left: -30px;
-    font-family: 'Droid Sans Mono', monospace
+    margin-left: -5px;
+    font-family: Gill Sans, sans-serif;
+    font-size: 16px;
 }
 
 
@@ -279,17 +288,17 @@ div#tmodel_tooltip{
 	position: absolute;
 	left: 30px;
 	top: 30px;
-	width: 10em;
-	height: 10em;
+	width: 15em;
+	height: 15em;
 	background-color: rgba(0,0,0,0.8);
 }
 div#tmodel_tooltip:after {
   content:"";
   position:absolute;
-  bottom: 0px;
-  left: -10px;
+  bottom: 6.5em;
+  left: -20px;
   border:10px solid transparent;
-  border-bottom-color: rgba(0,0,0,0.8);
+  border-right-color: rgba(0,0,0,0.8);
   display: inline-block;
   width:0;
 }
