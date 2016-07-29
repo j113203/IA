@@ -1,0 +1,76 @@
+<div id="a">
+
+</div>
+<style>
+body{
+	background-color: #1a237e;
+}
+div#a{
+	background-position: center; 
+	width: 350px;
+	height: 300px;
+	background-repeat: no-repeat;
+}
+</style>
+
+<script>
+var IA_draw = function(){
+	var canvas = document.createElement("canvas");
+	var ctx = canvas.getContext("2d");	
+	ctx.lineWidth="5";
+	ctx.beginPath();
+	ctx.moveTo(20,10);
+	ctx.lineTo(120,10);
+	ctx.lineTo(110,20);
+	ctx.lineTo(20,20);
+	ctx.lineTo(10,10);
+	ctx.strokeStyle="black";
+	ctx.stroke();
+	ctx.fillStyle="white";
+	ctx.fill();
+
+	return canvas.toDataURL();
+};
+console.log(IA_draw());
+console.log(document.getElementById("a"));
+document.getElementById("a").style.backgroundImage = "url('"+IA_draw()+"')";
+</script>
+
+<div class="trapezoid">
+
+</div>
+<style>
+.trapezoid {
+    left: 50px;
+    top: 50px;
+    position: absolute;
+    height: 20px;
+    width: 100px;
+}
+
+.trapezoid:before {
+    content: '';
+    width: 57%;
+    height: 100%;
+    left: -4%;
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px 0px 3px 3px;
+    transform: skewX(20deg);
+	 background-color: white;
+}
+
+.trapezoid:after {
+    content: '';
+    width: 59%;
+    height: 100%;
+    right: -4%;
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px 3px 3px 0px;
+    transform: skewX(-20deg);
+	 background-color: white;
+}
+</style>

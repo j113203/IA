@@ -1,0 +1,467 @@
+<div id="tmodel" class="hvcenter">
+	<div class="hvcenter">
+		<div class="border half">
+			<div id="B1P" class="half">
+				<div>
+					<div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div>
+				</div>
+			</div>
+			<div id="B5L" class="half hcenter">
+				<div class="hvcenter">
+					<div>
+						<div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div>
+					</div>
+				</div>
+			</div>				
+		</div>
+		<div class="border half">
+			<div id="LBB" class="half hcenter">
+				<div class="hvcenter">
+					<div>
+						<div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div>
+					</div>
+				</div>
+			</div>
+			<div id="L4B" class="half">
+				<div>
+					<div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div><div><img></img></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="tmodel_info">
+	<div class="hvcenter">
+	</div>
+</div>
+
+<div id="tmodel_tooltip">
+
+</div>
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet"> 
+<link rel="stylesheet" href="css/normalize.min.css" rel='stylesheet' type='text/css'/>
+
+<style>
+.hcenter,
+.hvcenter {
+    position: absolute;
+    left: 50%
+}
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Raleway
+}
+.hvcenter {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+.hcenter {
+    transform: translateX(-50%)
+}
+div#tmodel>div:after,
+div#tmodel>div:before {
+    font-size: 2.5em;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.border {
+    border: 1px solid
+}
+.half {
+    position: relative;
+    height: 50%;
+    width: 100%
+}
+div#tmodel {
+    width: 100%;
+    height: 423px;
+	z-index: 1
+}
+div#tmodel>div {
+    width: 960px;
+    height: 380px
+}
+div#tmodel>div:before {
+    content: 'R';
+    position: absolute;
+    width: 1em;
+    left: -1em
+}
+div#tmodel>div:after {
+    content: 'L';
+    position: absolute;
+    width: 1em;
+    right: -1em
+}
+div#tmodel>div>div>div#B1P>div {
+    position: absolute;
+    top: 0
+}
+div#tmodel>div>div>div#B1P:after,
+div#tmodel>div>div>div#B1P:before,
+div#tmodel>div>div>div#B5L:before {
+    position: absolute;
+    font-size: 1.5em;
+    text-align: center;
+    word-wrap: break-word;
+    top: 50%;
+    transform: translateY(-50%)
+}
+div#tmodel>div>div>div#B1P>div>div,
+div#tmodel>div>div>div#B5L>div>div>div,
+div#tmodel>div>div>div#L4B>div>div,
+div#tmodel>div>div>div#LBB>div>div>div {
+    display: inline-block
+}
+div#tmodel>div>div>div#B1P>div>div:after {
+    bottom: -1.5em;
+    position: absolute;
+    margin-left: -30px;
+    font-family: 'Droid Sans Mono', monospace
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(1):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(16):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(1):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(16):after {
+    content: '8'
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(15):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(2):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(15):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(2):after {
+    content: '7'
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(14):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(3):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(14):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(3):after {
+    content: '6'
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(13):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(4):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(13):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(4):after {
+    content: '5'
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(12):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(5):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(12):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(5):after {
+    content: '4'
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(11):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(6):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(11):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(6):after {
+    content: '3'
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(10):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(7):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(10):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(7):after {
+    content: '2'
+}
+div#tmodel>div>div>div#B1P>div>div:nth-child(8):after,
+div#tmodel>div>div>div#B1P>div>div:nth-child(9):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(8):after,
+div#tmodel>div>div>div#L4B>div>div:nth-child(9):after {
+    content: '1'
+}
+div#tmodel>div>div>div#B1P:before {
+    content: 'B1P';
+    width: 1em;
+    left: -1em
+}
+div#tmodel>div>div>div#B1P:after {
+    content: 'B2P';
+    width: 1em;
+    right: -1em
+}
+div#tmodel>div>div>div#B5L,
+div#tmodel>div>div>div#LBB {
+    width: 600px
+}
+div#tmodel>div>div>div#B5L>div,
+div#tmodel>div>div>div#LBB>div {
+    width: 100%
+}
+div#tmodel>div>div>div#B5L:before {
+    content: 'B5L';
+    width: 1em;
+    left: -1em
+}
+div#tmodel>div>div>div#B5L:after {
+    content: 'B5L';
+    position: absolute;
+    width: 1em;
+    right: -1em;
+    font-size: 1.5em;
+    text-align: center;
+    word-wrap: break-word;
+    top: 50%;
+    transform: translateY(-50%)
+}
+div#tmodel>div>div>div#LBB:after,
+div#tmodel>div>div>div#LBB:before {
+    content: 'LBB';
+    width: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    word-wrap: break-word;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute
+}
+div#tmodel>div>div>div#LBB:before {
+    left: -1em
+}
+div#tmodel>div>div>div#LBB:after {
+    right: -1em
+}
+div#tmodel>div>div>div#L4B>div {
+    position: absolute;
+    bottom: 0
+}
+div#tmodel>div>div>div#L4B:before {
+    content: 'L4B';
+    position: absolute;
+    width: 1em;
+    left: -1em;
+    font-size: 1.5em;
+    text-align: center;
+    word-wrap: break-word;
+    top: 50%;
+    transform: translateY(-50%)
+}
+div#tmodel>div>div>div#L4B:after {
+    content: 'L3B';
+    position: absolute;
+    width: 1em;
+    right: -1em;
+    font-size: 1.5em;
+    text-align: center;
+    word-wrap: break-word;
+    top: 50%;
+    transform: translateY(-50%)
+}
+div#tmodel>div>div>div#L4B>div>div:after {
+    top: -1.8em;
+    position: absolute;
+    margin-left: -30px;
+    font-family: 'Droid Sans Mono', monospace
+}
+
+
+div#tmodel_info{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+div#tmodel_info>div{
+	width: 60%;
+	height: 60%;
+	background-color:white;
+}
+
+div#tmodel_tooltip{
+	display: none;
+	z-index: 1;
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	width: 10em;
+	height: 10em;
+	background-color: rgba(0,0,0,0.8);
+}
+div#tmodel_tooltip:after {
+  content:"";
+  position:absolute;
+  bottom: 0px;
+  left: -10px;
+  border:10px solid transparent;
+  border-bottom-color: rgba(0,0,0,0.8);
+  display: inline-block;
+  width:0;
+}
+
+</style>
+<script defer>
+var canvas = document.createElement("canvas");
+	canvas.width="60";
+	canvas.height="60";
+var ctx = canvas.getContext("2d");
+	ctx.lineWidth="1";
+	ctx.strokeStyle="black";
+var renderTeeth = function(left,top,right,bottom,middle){
+	
+	ctx.clearRect(0,0,60,60);
+	
+	if (arguments.length==4){
+	
+		ctx.beginPath();
+		ctx.moveTo(1,1);
+		ctx.lineTo(1,59);
+		ctx.lineTo(15,30);
+		ctx.lineTo(1,1);
+		ctx.fillStyle=left;
+		ctx.fill();
+		ctx.stroke();
+		ctx.closePath();
+		
+		ctx.beginPath();
+		ctx.moveTo(1,1);
+		ctx.lineTo(59,1);
+		ctx.lineTo(45,30);
+		ctx.lineTo(15,30);
+		ctx.lineTo(1,1);
+		ctx.fillStyle=top;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+	
+		ctx.beginPath();
+		ctx.moveTo(59,1);
+		ctx.lineTo(59,59);
+		ctx.lineTo(45,30);
+		ctx.lineTo(59,1);
+		ctx.fillStyle=right;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+		
+		ctx.beginPath();
+		ctx.moveTo(59,59);
+		ctx.lineTo(1,59);
+		ctx.lineTo(15,30);
+		ctx.lineTo(45,30);
+		ctx.lineTo(59,59);
+		ctx.fillStyle=bottom;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+	
+	}else{
+	
+		ctx.beginPath();
+        ctx.moveTo(1,1);
+		ctx.lineTo(10,10);
+		ctx.lineTo(10,50);
+		ctx.lineTo(1,59);
+		ctx.lineTo(1,1);
+		ctx.fillStyle=left;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+		
+		ctx.beginPath();
+		ctx.moveTo(1,1);
+		ctx.lineTo(59,1);
+		ctx.lineTo(50,10);
+		ctx.lineTo(10,10);
+		ctx.lineTo(1,1);
+		ctx.fillStyle=top;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+	
+		ctx.beginPath();
+		ctx.moveTo(59,1);
+		ctx.lineTo(59,59);
+		ctx.lineTo(50,50);
+		ctx.lineTo(50,10);
+		ctx.lineTo(59,1);
+		ctx.fillStyle=right;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+	
+		ctx.beginPath();
+		ctx.moveTo(1,59);
+		ctx.lineTo(59,59);
+		ctx.lineTo(50,50);
+		ctx.lineTo(10,50);
+		ctx.lineTo(1,59);
+		ctx.fillStyle=bottom;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+		
+		ctx.beginPath();
+		ctx.moveTo(10,10);
+		ctx.lineTo(50,10);
+		ctx.lineTo(50,50);
+		ctx.lineTo(10,50);
+		ctx.lineTo(10,10);
+		ctx.fillStyle=middle;
+		ctx.fill();	
+		ctx.stroke();
+		ctx.closePath();
+	}
+	
+	return canvas.toDataURL();
+};
+
+var tmodel_img = document.getElementById("tmodel").getElementsByTagName("img");
+var tmodel_info = document.getElementById("tmodel_info");
+var tmodel_tooltip = document.getElementById("tmodel_tooltip");
+
+var tmodel_teeth = [5,6,7,8,9,10,18,19,20,21,22,23,28,29,30,31,32,33,41,42,43,44,45,46];
+
+var infoTeeth = function(i){
+	tmodel_info.style.display="block";
+	
+	
+};
+
+var tooltipTeeth = function(e){
+	tmodel_tooltip.style.display="block";
+	var _e = e.getBoundingClientRect();
+	tmodel_tooltip.style.left = _e.left+70;
+	tmodel_tooltip.style.top = _e.top-120;
+};
+
+for (var i=0; i<tmodel_img.length; i++){
+	var _i = tmodel_img[i];
+	
+	var ajax_result=[];
+	if (tmodel_teeth.indexOf(i)>=0){
+		ajax_result = ["white","#F44336","white","white"];
+	}else{
+		ajax_result = ["white","#F44336","white","white","white"];
+	}
+	_i.src = renderTeeth.apply(this, ajax_result);
+	
+	_i.addEventListener("click", function(){
+		infoTeeth(this);
+	});
+	_i.addEventListener("mouseover", function(){
+		tooltipTeeth(this);
+	});
+	_i.addEventListener("mouseout", function(){
+		tmodel_tooltip.style.display="none";
+	});
+}
+
+tmodel_info.addEventListener("click", function(e){
+	if (e.target == e.currentTarget){
+		this.style.display="none";
+	}	
+});
+
+tmodel_info.getElementsByTagName("div")[0].addEventListener("click", function(e){
+	 e.stopPropagation();
+});
+
+
+
+</script>
